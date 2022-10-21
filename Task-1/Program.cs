@@ -18,7 +18,7 @@ int SecondDigit(int randomNumber)
     return secondDigit;
 }
 
-Console.WriteLine("Вторая цифра из числа = :" + SecondDigit(randomNumber));
+Console.WriteLine("Вторая цифра из числа = " + SecondDigit(randomNumber));
 
 
 
