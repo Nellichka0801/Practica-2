@@ -6,19 +6,20 @@
 //7 -> да
 //1 -> нет
 
-Console.Write("Введи цифру, обозначающую день недели: ");
-int dayNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число от 1 до 7");
+//Указание типа данных
+int dayNumber = int.Parse(Console.ReadLine()!);
 
-void CheckingTheDayOfTheWeek (int dayNumber) {
-  if (dayNumber == 6 || dayNumber == 7) {
-  Console.WriteLine("(этот день выходной) -> да");
-  }
-  else if (dayNumber < 1 || dayNumber > 7) {
-    Console.WriteLine("это вообще не день недели");
-  }
-  else Console.WriteLine("(этот день не выходной) -> нет");
+if (dayNumber > 8) 
+    Console.WriteLine ("Неверно введенное число");
+
+else
+{
+   if (dayNumber<=5)
+   Console.WriteLine ("День не является выходным");
+
+   if(dayNumber>5 && dayNumber<7)
+   Console.WriteLine ("Этот день является выходным");
 }
 
-CheckingTheDayOfTheWeek(dayNumber);
 
-Console.WriteLine("Hello, World!");
